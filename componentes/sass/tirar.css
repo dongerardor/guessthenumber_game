@@ -1,0 +1,273 @@
+#graficos_small img{ position: absolute; display: none;}
+	#grafico_small_section35_1 { top:120px; left: 10px;}
+	#grafico_small_section37_1 { top:100px; left: 760px; }
+	#grafico_small_section37_2 { top:450px; left: 760px; }
+	#grafico_small_section38_1 { top:100px; left: 760px; }
+	#grafico_small_section38_2 { top:400px; left: 760px; }
+	#grafico_small_section38_3 { top:100px; left: 760px; }
+
+
+
+	#wrapper_animacao{
+		display: none;
+		opacity: 0;
+		position: absolute;
+		top: 64px;
+		left: 200px;
+
+		#circulo_animacao{
+			position: relative;
+			width: 487px;
+			height: 487px;
+			@include border-radius(50%);
+			border: 12px solid $red;
+			margin-top: 2px;
+		}
+
+		video {
+			position: absolute;
+			top: 12px;
+			left: 12px;
+			width: 490px;
+			height: 490px;
+			@include border-radius(50%);
+			overflow: hidden;
+			mask: url(../images/video_mask.png);
+			-webkit-mask: url(../images/video_mask.png);
+			-o-mask: url(../images/video_mask.png);
+			-ms-mask: url(../images/video_mask.png);
+		}
+		#video_gif_mobile, #img_last_section {
+			display:none;
+			position: absolute;
+			top: 12px;
+			left: 12px;
+			width: 490px;
+			height: 490px;
+			overflow: hidden;
+			mask: url(../images/video_mask.png);
+			-webkit-mask: url(../images/video_mask.png);
+			-o-mask: url(../images/video_mask.png);
+			-ms-mask: url(../images/video_mask.png);
+		}
+	}
+
+
+	#section31{
+		display: none;
+		opacity: 0;
+		#logo_vpower{
+			width: 150px;
+			height: 150px;
+			background: white;
+			@include border-radius(50%);
+			position: absolute;
+			left: 40px;
+			top: 150px;
+			img{
+				padding-top: 50px;
+				width: 80%;
+				padding-left: 17px;
+			}
+		}
+		div#txt_gasolina{
+			width: 230px;
+			height: 230px;
+			@include border-radius(50%);
+			background: $red;
+			position: absolute;
+			left: 40px;
+			top: 280px;
+			p{	
+				font-family: $font-ralewayBold;	
+				color: white;
+				text-align: center;
+				line-height: 19px;
+				padding-top: 44px;
+			}
+			p#asterisco{
+				position: absolute;
+				top: 298px;
+				left: -24px;
+				color: black;
+				font-size: .75em;
+				font-family: $font-raleway;
+			}
+		}
+	}//#section31
+	#section32{
+
+		display: none;
+		opacity: 0;
+
+		div#txt_fmt{
+			width: 150px;
+			height: 150px;
+			@include border-radius(50%);
+			background: $red;
+			position: absolute;
+			left: 625px;
+			top: 255px;
+			p{	
+				font-family: $font-ralewayExtraBold;	
+				color: white;
+				text-align: center;
+				line-height: 82px;
+				padding-top: 32px;
+				font-size: 2.5em;
+			}
+		}
+	}//#section32
+	#section33{
+
+		display: none;
+		opacity: 0;
+
+		div.txt_explain{
+			width: 165px;
+			height: 165px;
+			left: 130px;
+			top: 250px;
+			p{	
+				padding-top: 29px;
+			}
+		}
+	}//#section33
+	#section34{
+
+		display: none;
+		opacity: 0;
+
+		div.txt_explain{
+			width: 160px;
+			height: 160px;
+			left: 621px;
+			top: 250px;
+			p{	
+				padding-top: 27px;
+			}
+		}
+	}//#section34
+	#section35{
+
+		display: none;
+		opacity: 0;
+
+		div.txt_explain{
+			width: 125px;
+			height: 125px;
+			left: 140px;
+			top: 280px;
+			p{
+				padding-top: 30px;
+			}
+		}
+	}//#section35
+	#section36{
+
+		display: none;
+		opacity: 0;
+
+		div.txt_explain{
+			width: 200px;
+			height: 200px;
+			left: 637px;
+			top: 234px;
+			p{
+				padding-top: 31px;
+			}
+		}
+	}//#section36
+	#section37{
+
+		display: none;
+		opacity: 0;
+
+		div.txt_explain{
+			width: 180px;
+			height: 180px;
+			left: 116px;
+			top: 244px;
+			p{
+				padding-top: 32px;
+			}
+		}
+	}//#section37
+	#section38{
+
+		display: none;
+		opacity: 0;
+
+		div.txt_explain{
+			width: 210px;
+			height: 210px;
+			left: 117px;
+			top: 224px;
+			p{
+				padding-top: 32px;
+			}
+		}
+	}//#section38
+	#section39{
+
+		display: none;
+		opacity: 0;
+
+		div.txt_explain{
+			width: 190px;
+			height: 190px;
+			left: 607px;
+			top: 239px;
+			p{
+				padding-top: 34px;
+			}
+		}
+	}//#section39
+	#carro_fechamento{
+		img{
+			display: none;
+			position: absolute;
+			left: 52px;
+			top: 100px;
+		}
+	}//carro_fechamento
+	#fechamento1{
+		display: none;
+		opacity: 0;
+		div.txt_explain{
+			width: 250px;
+			height: 250px;
+			left: 331px;
+			top: 194px;
+			p{
+				font-family: $font-ralewayBold;	
+				color: white;
+				font-size: 1.2em;
+				text-align: center;
+				line-height: 19px;
+				padding-top: 39px;
+			}
+		}
+	}//#fechamento1
+
+
+	
+/* PRELOAD */
+#html5Loader{
+	top:0;
+	left:0;
+	background-color:black;
+	background-color:rgba(0,0,0,0.95);
+	position:fixed;
+	z-index:1000;
+}
+#html5Loader .fallback {
+	top:50%;
+	position:absolute;
+	text-align:center;
+	width:100%;
+	color:white;
+	vertical-align: middle;
+	display: block;
+	font-style: normal;
+}

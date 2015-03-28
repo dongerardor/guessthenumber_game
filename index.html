@@ -3,7 +3,7 @@
 <head>
 	<meta charset="UTF-8">
 	<script src="https://code.jquery.com/jquery-2.1.3.min.js"></script>
-	<script src="script.js"></script>
+	<script src="js/juego.js"></script>
 	<title>Juego js</title>
 	<style>
 		#main{
@@ -18,11 +18,20 @@
 		#number.show{
 			background: white;
 		}
+		#clue_resultado div#barra{
+			width: 100%;
+			height: 20px;
+			background: red;
+		}
 	</style>
 </head>
 <body>
 	<div id="main">
 		<p id="number">--</p>
+		<div id="clue_resultado">
+			<div id="barra"></div>
+			<p></p>
+		</div>
 		<p id="message">--</p>
 		<input type="text" id="guess"/>
 		<button id="apostar">Apostar</button>

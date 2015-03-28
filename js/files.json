@@ -1,0 +1,35 @@
+{
+  "files": [{
+    "source": "images/videos/motor_in.png",
+    "type": "IMAGE",
+    "size": 1210254
+  },{
+    "source": "images/videos/motor_out.png",
+    "type": "IMAGE",
+    "size": 886318
+  },{
+    "source": "images/videos/sprite_octanas1.png",
+    "type": "IMAGE",
+    "size": 389175
+  }, {
+    "source": "images/videos/sprite_octanas2.png",
+    "type": "IMAGE",
+    "size": 323346
+  },{
+    "source": "images/videos/sprite_octanas3.png",
+    "type": "IMAGE",
+    "size": 406658
+  },{
+    "source": "images/gasolina.png",
+    "type": "IMAGE",
+    "size": 464583
+  },{
+    "type": "VIDEO",
+    "sources": {
+      "h264": {
+        "source": "images/videos/fundo.m4v",
+        "size": 218580
+      }
+    }
+  }]
+}

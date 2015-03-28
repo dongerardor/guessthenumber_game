@@ -1,0 +1,739 @@
+#wrapper_geral{
+	position: relative;
+	width: 920px;
+	height: 640px;
+	overflow: hidden;
+	margin: 0 auto;
+	background: linear-gradient(left, #e4e4e4, #f7f9f8);
+}
+
+#info_wrapper {
+	position: absolute;
+	width: 920px;
+	height: 640px;
+	z-index: 2;
+	overflow: hidden;
+	margin: 0 auto;
+}
+
+div#cabezalho_comum {
+	display: none;
+	text-align: center;
+	position: absolute;
+	top: 10px;
+	width: 920px;
+
+    h6{
+		font-family: $font-intro;
+		font-size: 10px;
+    }
+    h3{
+    	padding-top: 5px;
+		font-family: $font-ralewayMedium;
+		color: $red;
+		font-size: 16px;
+    }
+    h3.branco{ color: white; }
+}
+#cabezalho_inicial {
+		position: absolute;
+		width: 350px;
+		left: 289px;
+		z-index: 2;
+		img {
+			margin: 5px auto;
+			display: block;
+			text-align: center;
+			margin-bottom: -1em;
+		}
+		hr.short {
+			width: 120px;
+		}
+		hr.long {
+			width: 100%;
+		}
+		p {
+			font-family: $font-intro;
+			font-size: 1em;
+			color: black;
+			text-align: center;
+			letter-spacing: 4px;
+		}
+	}
+
+////////////////////////////////////////////////////////////////////////////
+////////////////////////////////////////////////////////////////////////////
+
+#section1 {
+	div#section1_fundo{
+		width: 920px;
+		height: 640px;
+		overflow: hidden;
+	}
+	
+	#logo_Vpower {
+		position: absolute;
+		z-index: 1010;
+		top: 580px;
+		left: 345px;
+	}
+	.btns_continuar{
+		display: none;
+		position: absolute;
+		z-index: 1011;
+		width: 920px;
+		top: 570px;
+		text-align: center;
+		p{ font-size: .8em; }
+		img{ cursor: pointer; }
+	}
+}
+
+
+////////////////////////////////////////////////////////////////////////////
+////////////////////////////////////////////////////////////////////////////
+
+////////////////////////////////////////////////////////////////////////////
+////////////////////////////////////////////////////////////////////////////
+
+#section2 {
+	display: none;
+
+	.bola_vermelha{
+		@include border-radius(50%);
+		background: $red;
+		position: absolute;
+		display: none;
+		opacity: 0;
+	}
+
+	div#imgs_gasolinas{
+		div{
+			position: absolute;
+			display: none;
+			top: 220px;
+			opacity: 0;
+			//.btns_gasolinas{ display: none; }
+			img.bandinha_gasolinas, img.bandinha_gasolinas_on{
+				display: none;
+				position: absolute;
+				top: 88px;
+				left: 50px;
+			}
+			img.imgs_gasolinas{
+				width: 218px;
+				position: absolute;
+			}
+			img.btns_gasolinas{
+				display: none;
+				position: absolute;
+				top: 270px;
+				left: 87px;
+				cursor: pointer;
+			}
+		}
+		div#comum {
+			top: 100px;
+			left: 400px;
+			display: none;
+		}
+		div#aditivada {
+			top: 183px;
+			left: 283px;
+		}
+		div#premium {
+			top: 183px;
+			left: 422px;
+		}
+		div#vpower {
+			top: 227px;
+			left: 352px;
+		}
+	}
+	
+
+	#section21{
+		.bola_vermelha{
+			width: 264px;
+			height: 264px;
+			left: 332px;
+			top: 98px;
+			p{	
+				font-family: $font-ralewaySemiBold;
+				color: white;
+				text-align: center;
+				line-height: 20px;
+				padding-top: 70px;
+			}
+		}
+	}
+	#section22{
+		.txt_gasolinas{
+			position: absolute;
+			display: none;
+			top: 97px;
+			font-family: $font-ralewaySemiBold;
+			text-align: center;
+			p{
+				font-size: 14px;
+				font-family: $font-ralewaySemiBold;
+			}
+			h4{
+				margin-top: 27px;
+				font-family: $font-raleway;
+			}
+		}
+		div#txt_gasolinas_comum{
+			left: 72px;
+		}
+		div#txt_gasolinas_aditivada{
+			left: 270px;
+		}
+		div#txt_gasolinas_premium{
+			left: 503px;
+		}
+		div#txt_gasolinas_vpower{
+			left: 728px;
+			h4{ color: $red; }
+		}
+	}
+
+
+
+////////////////////////////////////////////////////////////////////////////
+////////////////////////////////////////////////////////////////////////////
+////////////////////////////////////////////////////////////////////////////
+////////////////////////////////////////////////////////////////////////////
+
+
+////////////////////////////////////////////////////////////////////////////
+////////////////////////////////////////////////////////////////////////////
+////////////////////////////////////////////////////////////////////////////
+////////////////////////////////////////////////////////////////////////////
+
+
+////////////////////////////////////////////////////////////////////////////
+////////////////////////////////////////////////////////////////////////////
+////////////////////////////////////////////////////////////////////////////
+////////////////////////////////////////////////////////////////////////////
+
+	
+
+
+
+	#section23, #section23_vpower{
+
+		div.detalhe_img_ampliar{
+		/* 	display: none; */
+			z-index: 10000;
+			position: absolute;
+			top: 42px;
+			left: 590px;
+			img#btn_detalhe_img_ampliar{//btn abrir detalhe
+				position: absolute;
+				top: 64px;
+				left: 157px;
+				width: 28px;
+				cursor: pointer;
+				
+				-webkit-animation: 	animacaoPulsante 4s infinite; /* Safari 4+ */
+				-moz-animation:    	animacaoPulsante 4s infinite; /* Fx 5+ */
+				-o-animation:      	animacaoPulsante 4s infinite; /* Opera 12+ */
+				animation: 			animacaoPulsante 4s infinite; 
+				/* &:hover{
+					opacity: 1 !important;
+				} */
+			}
+		}
+	}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+	#section23{
+		display: none;
+		p#detalhe_txt_gasolina{
+			position: absolute;
+			top: 97px;
+			left: 72px;
+			font-family: $font-ralewayBold;
+			color: $cinza80;
+			text-align: center;
+			font-size: 14px;
+		}
+		h4#detalhe_txt_gasolina_titulo{
+			position: absolute;
+			top: 166px;
+			left: 80px;
+			font-family: $font-raleway;
+			font-size: 20px;
+			text-align: center;
+		}
+		img#detalhe_img_cabezalho{
+			position: absolute;
+			top: 80px;
+			left: 220px;
+		}
+		div#detalhes_bloco_txt{
+			position: absolute;
+			top: 240px;
+			left: 220px;
+			width: 650px;
+			hr{
+				position: absolute;
+				top: 130px;
+				width: 100%;
+			}
+			#detalhes_bloco_txt_entrega{
+				position: absolute;
+				top: 160px;
+			}
+		}
+		div#detalhes_bloco_txt div{
+			font-family: $font-ralewaySemiBold;
+			h3, ul{
+				position: relative;
+				top: -20px;
+				left: 30px;
+			}
+			h3{
+				font-size: 20px;
+			}
+			ul{
+				margin-top: 7px;
+			}
+		}
+	}
+
+////////////////////////////////////////////////////////////////////////////
+
+	#section23_vpower{
+		display: none;
+		opacity: 0;
+		background: $red;
+		height: 640px;
+		img#icon_shellVpower{
+			position: absolute;
+			display: none;
+			opacity: 0;
+			left: 424px;
+			top: 230px;
+		}
+		p#txt_description{
+			position: absolute;
+			top: 97px;
+			opacity: 0;
+			font-size: 14px;
+			color: white;
+			text-align: center;
+			width: 100%;
+		}
+		h3{
+			position: absolute;
+			top: 167px;
+			opacity: 0;
+			font-size: 20px;
+			font-family: $font-raleway;
+			color: yellow;
+			text-align: center;
+			width: 100%;
+			text-transform: uppercase;
+		}
+		p#txt_description2{
+			display: block;
+			position: absolute;
+			top: 218px;
+			opacity: 0;
+			color: black;
+			font-size: 11px;
+			font-family: $font-ralewayExtraBold;
+			text-align: center;
+			text-transform: uppercase;
+			width: 100%;
+		}
+		img#img_gasolina_vpower{
+			display: block;
+			opacity: 0;
+			width: 218px;
+			position: absolute;
+			top: 220px;
+			left: 349px;
+		}
+		div.btns_ampliar{
+			position: absolute;
+			display: block;
+			opacity: 0;
+			p{
+				color: white;
+				font-size: 20px;
+				font-family: $font-ralewaySemiBold;
+				display: block;
+				float: left;
+				margin-right: 10px;
+				padding-top: 4px;
+			}
+			img{
+				height: 24px;
+				display: block;
+				float: left;
+				margin-right: 10px;
+			}
+		}
+		.btns_ampliar{
+			cursor: pointer;
+		}
+		#btn_ampliar_formulacao{
+			display: block;
+			opacity: 0;
+			left: 263px;
+			top: 320px;
+		}
+		#btn_ampliar_vantagens{
+			display: block;
+			opacity: 0;
+			left: 496px;
+			top: 359px;
+		}
+		#btn_ampliar_entrega{
+			display: block;
+			opacity: 0;
+			left: 219px;
+			top: 389px;
+		}
+		#btn_fechar{
+			display: none;
+			position: absolute;
+			z-index: 1020;
+			left: 441px;
+			top: 493px;
+			cursor: pointer;
+		}
+
+		///////////////
+		//circulo cinza
+		///////////////
+		.destaque_vpower{
+			display: none;
+			opacity: 0;
+			background: white;
+			border: 5px solid grey;
+			@include border-radius (50%);
+			position: absolute;
+			top: 50px;
+			left: 260px;
+			width: 400px;
+			height: 400px;
+			img{
+				display: block;
+				margin: 0 auto;
+			}
+			img:nth-child(1){
+				height: 24px;
+				margin-top: 15px;
+			}
+			img[src*="icon_fechar_destaqueVpower"]{
+				cursor: pointer;
+			}
+			.destaque_vpower_texto{
+				height: 307px;
+				width: 100%;
+				padding-top: 15px;
+				h3{
+					position: static;
+					font-family: $font-ralewaySemiBold;
+					opacity: 1;
+					color: grey;
+				}
+				p{
+					font-size: 13px;
+					font-family: $font-ralewaySemiBold;
+					text-align: center;
+					line-height: 19px;
+					margin-top: 15px;
+				}
+				p:nth-child(2){
+					margin-top: 30px;
+				}
+			}
+		}
+	}
+}
+
+
+////////////////////////////////////////////////////////////////////////////
+////////////////////////////////////////////////////////////////////////////
+
+////////////////////////////////////////////////////////////////////////////
+////////////////////////////////////////////////////////////////////////////
+
+////////////////////////////////////////////////////////////////////////////
+////////////////////////////////////////////////////////////////////////////
+
+
+#section3 {
+	display: none;
+	position: absolute;
+	z-index: 5001;
+	width: 100%;
+	height: 100%;
+	background: url("../images/gasolina.png") no-repeat right top;
+	background-position: 10% 45%;
+
+	img#logo {
+    margin: 130px auto 10px auto;
+		display: block;
+	}
+	img#gasolinas {
+    margin: 0 auto;
+    display: block;
+	}
+	div#btn_reiniciar {
+    text-align: center;
+    p{ font-size: .8em; }
+		img{ cursor: pointer; }
+	}
+}
+
+
+
+
+
+
+
+////////////////////////////////////////////////////////////////////////////
+////////////////////////////////////////////////////////////////////////////
+
+////////////////////////////////////////////////////////////////////////////
+////////////////////////////////////////////////////////////////////////////
+
+////////////////////////////////////////////////////////////////////////////
+////////////////////////////////////////////////////////////////////////////
+
+////////////////////////////////////////////////////////////////////////////
+////////////////////////////////////////////////////////////////////////////
+
+section#pop_up_wrapper_geral{
+	width: 100%;
+	height: 100%;
+	background: rgba(255, 255, 255, .7);
+	position: absolute;
+	top: 0;
+	z-index: 100001;
+	display: none;
+
+	div#pop_up{
+		position: absolute;
+		z-index: 14001;
+		width: 800px;
+		height: 510px;
+		top: 42px;
+		left: 35px;
+		background: #bbbbbb;
+		border: 6px solid #808285;
+		padding: 20px;
+		@include border-radius(20px);
+
+		div#pop_ups_wrapper{
+			width: 100%;
+			height: 480px;
+			overflow: hidden;
+			position: relative;
+			.pop_ups{ 
+				position: absolute;
+				top: 0;
+				left: 5px;
+				width: 100%;
+				.sprite{
+					position: absolute;
+					width: 600px;
+					height: 462px;
+					top: -50px;
+					left: 89px;
+					overflow: hidden;
+					background-position: 0px;
+			    	background-repeat: no-repeat;
+					-webkit-background-size: cover;
+					-moz-background-size: cover;
+					-o-background-size: cover;
+					background-size: cover;
+				}
+				#sprite1{
+					background-image: url(../images/videos/motor_in.png); 
+				}
+				#sprite2{
+					background-image: url(../images/videos/sprite_octanas2.png); 
+				}
+				#sprite3{
+					background-image: url(../images/videos/sprite_octanas3.png); 
+				}
+				h4{
+					font-family: $font-ralewayBold;
+					text-align: center;
+					font-size: 17px;
+					margin-top: 430px;
+				}
+			}
+			#pop_up1{}
+			#pop_up2{ display: none };
+			#pop_up3{ display: none };
+		}
+
+		h2{
+			font-size: 20px;
+			color: $red;
+			width: 100%;
+			text-align: center;
+		}
+		
+		#pop_up_navegador{
+			position: absolute;
+			z-index: 10001;
+			top: 430px;
+			left: 379px;
+			width: 120px;
+			height: 30px;
+		}
+		
+		img#btn_fechar{
+			position: absolute;
+
+			top: 535px;
+			left: 400px;
+			cursor: pointer;
+		}
+		#btn_next, #btn_prev{
+			float: left;
+			margin-right: 5px;
+			cursor: pointer;
+		}
+		.bolinhas_nav_popup{
+			@include border-radius(50%);
+			background: white;
+			border: 1px solid #4d4d4f;
+			width: 6px;
+			height: 6px;
+			float: left;
+			margin-right: 5px;
+			margin-top: 5px;
+		}
+		div.bolinhas_nav_popup.selected{
+			background: #4d4d4f;
+		}
+	}
+}
+
+
+div#icons_nav_ppal{
+	display: none;
+	position: absolute;
+	top: 510px;
+	left: 423px;
+	z-index: 1010;
+	p#legenda_pe{
+		position: absolute;
+		display: none;
+		width: 400px;
+		top: 62px;
+		left: -350px;
+		font-size: 11px;
+		text-transform: uppercase;
+	}
+	img#icon_nav_ppal{
+		display: block;
+		margin: 30px auto 5px auto;
+	}
+	div#bolinhas_nav_ppal_wrapper{
+		width: 56%;
+		display: inline-block;
+		margin-left: 25px;
+		
+		div.bolinhas_nav_ppal{
+			@include border-radius(50%);
+			background: white;
+			border: 1px solid $red;
+			width: 6px;
+			height: 6px;
+			float: left;
+			margin-right: 5px;
+			cursor: pointer;
+		}
+		div.bolinhas_nav_ppal.selected{
+			background: $red;
+			cursor: auto;
+			pointer-events: none;
+		}
+		div.bolinhas_nav_ppal.detalhe_vpower{
+			@include border-radius(50%);
+			background: white;
+			border: 1px solid black;
+			width: 6px;
+			height: 6px;
+			float: left;
+			margin-right: 5px;
+		}
+		div.bolinhas_nav_ppal.selected.detalhe_vpower{
+			background: black;
+		}
+	}
+}
+
+
+/* PRELOAD */
+#html5Loader{
+	top:0;
+	left:0;
+	background-color:black;
+	background-color:rgba(0,0,0,0.95);
+	position:fixed;
+	z-index:1000;
+}
+#html5Loader .fallback {
+	top:50%;
+	position:absolute;
+	text-align:center;
+	width:100%;
+	color:white;
+	vertical-align: middle;
+	display: block;
+	font-style: normal;
+}
+
+@-webkit-keyframes animacaoPulsante {
+  0% { opacity: 1; }
+  80% { opacity: 1; }
+  90% { opacity: 0; }
+  100% { opacity: 1; }
+}
+@-moz-keyframes animacaoPulsante {
+    0% { opacity: 1; }
+  80% { opacity: 1; }
+  90% { opacity: 0; }
+  100% { opacity: 1; }
+}
+@-o-keyframes animacaoPulsante {
+    0% { opacity: 1; }
+  80% { opacity: 1; }
+  90% { opacity: 0; }
+  100% { opacity: 1; }
+}
+@keyframes animacaoPulsante {
+    0% { opacity: 1; }
+  80% { opacity: 1; }
+  90% { opacity: 0; }
+  100% { opacity: 1; }
+}

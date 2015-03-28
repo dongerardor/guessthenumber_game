@@ -1,0 +1,45 @@
+@font-face {/*Intro*/
+	font-family: 'Intro';
+	src: url('../fonts/Intro.eot');
+	src: local('../Intro'), url('../fonts/Intro.woff') format('woff'), url('../fonts/Intro.ttf') format('truetype');
+}
+@font-face {/*Raleway*/
+	font-family: 'Raleway';
+	src: url('../fonts/Raleway.eot');
+	src: local('../Raleway'), url('../fonts/Raleway.woff') format('woff'), url('../fonts/Raleway.ttf') format('truetype');
+}
+@font-face {/*Raleway-Medium*/
+	font-family: 'Raleway-Medium';
+	src: url('../fonts/Raleway-Medium.eot');
+	src: local('../Raleway-Medium'), url('../fonts/Raleway-Medium.woff') format('woff'), url('../fonts/Raleway-Medium.ttf') format('truetype');
+}
+@font-face {/*Raleway-semibold*/
+	font-family: 'Raleway-SemiBold';
+	src: url('../fonts/Raleway-SemiBold.eot');
+	src: local('../Raleway-SemiBold'), url('../fonts/Raleway-SemiBold.woff') format('woff'), url('../fonts/Raleway-SemiBold.ttf') format('truetype');
+}
+@font-face {/*Raleway-Bold*/
+	font-family: 'Raleway-Bold';
+	src: url('../fonts/Raleway-Bold.eot');
+	src: local('../Raleway-Bold'), url('../fonts/Raleway-Bold.woff') format('woff'), url('../fonts/Raleway-Bold.ttf') format('truetype');
+}
+@font-face {/*Raleway-ExtraBold*/
+	font-family: 'Raleway-ExtraBold';
+	src: url('../fonts/Raleway-ExtraBold.eot');
+	src: local('../Raleway-ExtraBold'), url('../fonts/Raleway-ExtraBold.woff') format('woff'), url('../fonts/Raleway-ExtraBold.ttf') format('truetype');
+}
+
+$fundo-cinza    : #e4e4e4;
+$red 			: rgb(237, 18, 36);
+$cinza80		: #5b5b5f;
+
+$font-intro: Intro, Arial, sans;
+$font-raleway: Raleway, Arial, sans;
+$font-ralewayMedium: Raleway-Medium, Arial, sans;
+$font-ralewaySemiBold: Raleway-SemiBold, Arial, sans;
+$font-ralewayBold: Raleway-Bold, Arial, sans;
+$font-ralewayExtraBold: Raleway-ExtraBold, Arial, sans;
+
+$default-border-radius: 15px;
+
+$margin-sides : 20px;

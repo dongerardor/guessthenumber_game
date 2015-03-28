@@ -1,0 +1,814 @@
+/* line 5, C:\Ruby193\lib\ruby\gems\1.9.1\gems\compass-core-1.0.0.alpha.19\stylesheets\compass\reset\_utilities.scss */
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font: inherit;
+  font-size: 100%;
+  vertical-align: baseline; }
+
+/* line 22, C:\Ruby193\lib\ruby\gems\1.9.1\gems\compass-core-1.0.0.alpha.19\stylesheets\compass\reset\_utilities.scss */
+html {
+  line-height: 1; }
+
+/* line 24, C:\Ruby193\lib\ruby\gems\1.9.1\gems\compass-core-1.0.0.alpha.19\stylesheets\compass\reset\_utilities.scss */
+ol, ul {
+  list-style: none; }
+
+/* line 26, C:\Ruby193\lib\ruby\gems\1.9.1\gems\compass-core-1.0.0.alpha.19\stylesheets\compass\reset\_utilities.scss */
+table {
+  border-collapse: collapse;
+  border-spacing: 0; }
+
+/* line 28, C:\Ruby193\lib\ruby\gems\1.9.1\gems\compass-core-1.0.0.alpha.19\stylesheets\compass\reset\_utilities.scss */
+caption, th, td {
+  text-align: left;
+  font-weight: normal;
+  vertical-align: middle; }
+
+/* line 30, C:\Ruby193\lib\ruby\gems\1.9.1\gems\compass-core-1.0.0.alpha.19\stylesheets\compass\reset\_utilities.scss */
+q, blockquote {
+  quotes: none; }
+  /* line 103, C:\Ruby193\lib\ruby\gems\1.9.1\gems\compass-core-1.0.0.alpha.19\stylesheets\compass\reset\_utilities.scss */
+  q:before, q:after, blockquote:before, blockquote:after {
+    content: "";
+    content: none; }
+
+/* line 32, C:\Ruby193\lib\ruby\gems\1.9.1\gems\compass-core-1.0.0.alpha.19\stylesheets\compass\reset\_utilities.scss */
+a img {
+  border: none; }
+
+/* line 116, C:\Ruby193\lib\ruby\gems\1.9.1\gems\compass-core-1.0.0.alpha.19\stylesheets\compass\reset\_utilities.scss */
+article, aside, details, figcaption, figure, footer, header, hgroup, main, menu, nav, section, summary {
+  display: block; }
+
+@font-face {
+  /*Intro*/
+  font-family: 'Intro';
+  src: url("../fonts/Intro.eot");
+  src: local("../Intro"), url("../fonts/Intro.woff") format("woff"), url("../fonts/Intro.ttf") format("truetype"); }
+@font-face {
+  /*Raleway*/
+  font-family: 'Raleway';
+  src: url("../fonts/Raleway.eot");
+  src: local("../Raleway"), url("../fonts/Raleway.woff") format("woff"), url("../fonts/Raleway.ttf") format("truetype"); }
+@font-face {
+  /*Raleway-Medium*/
+  font-family: 'Raleway-Medium';
+  src: url("../fonts/Raleway-Medium.eot");
+  src: local("../Raleway-Medium"), url("../fonts/Raleway-Medium.woff") format("woff"), url("../fonts/Raleway-Medium.ttf") format("truetype"); }
+@font-face {
+  /*Raleway-semibold*/
+  font-family: 'Raleway-SemiBold';
+  src: url("../fonts/Raleway-SemiBold.eot");
+  src: local("../Raleway-SemiBold"), url("../fonts/Raleway-SemiBold.woff") format("woff"), url("../fonts/Raleway-SemiBold.ttf") format("truetype"); }
+@font-face {
+  /*Raleway-Bold*/
+  font-family: 'Raleway-Bold';
+  src: url("../fonts/Raleway-Bold.eot");
+  src: local("../Raleway-Bold"), url("../fonts/Raleway-Bold.woff") format("woff"), url("../fonts/Raleway-Bold.ttf") format("truetype"); }
+@font-face {
+  /*Raleway-ExtraBold*/
+  font-family: 'Raleway-ExtraBold';
+  src: url("../fonts/Raleway-ExtraBold.eot");
+  src: local("../Raleway-ExtraBold"), url("../fonts/Raleway-ExtraBold.woff") format("woff"), url("../fonts/Raleway-ExtraBold.ttf") format("truetype"); }
+/* line 4, ../componentes/sass/_base.scss */
+h1, h2, h3, h4, h5, h6 {
+  font-family: Raleway-SemiBold, Arial, sans;
+  font-weight: normal; }
+
+/* line 10, ../componentes/sass/_base.scss */
+#info_wrapper h1 {
+  font-family: Raleway-ExtraBold, Arial, sans;
+  font-size: 36px;
+  color: #ed1224;
+  text-align: center;
+  position: absolute;
+  z-index: 3;
+  top: 110px;
+  width: 100%; }
+
+/* line 21, ../componentes/sass/_base.scss */
+#info_wrapper h2 {
+  font-size: 1.5rem;
+  line-height: 100%; }
+
+/* line 26, ../componentes/sass/_base.scss */
+#info_wrapper h4 {
+  font-size: 20px; }
+
+/* line 35, ../componentes/sass/_base.scss */
+#info_wrapper p {
+  font-family: Raleway, Arial, sans; }
+
+/* line 39, ../componentes/sass/_base.scss */
+li {
+  line-height: 1.2rem;
+  font-family: Raleway-SemiBold, Arial, sans;
+  font-size: .8em; }
+
+/* line 1, ../componentes/sass/_layout.scss */
+#wrapper_geral {
+  position: relative;
+  width: 920px;
+  height: 640px;
+  overflow: hidden;
+  margin: 0 auto;
+  background: linear-gradient(to right, #e4e4e4, #f7f9f8); }
+
+/* line 10, ../componentes/sass/_layout.scss */
+#info_wrapper {
+  position: absolute;
+  width: 920px;
+  height: 640px;
+  z-index: 2;
+  overflow: hidden;
+  margin: 0 auto; }
+
+/* line 19, ../componentes/sass/_layout.scss */
+div#cabezalho_comum {
+  display: none;
+  text-align: center;
+  position: absolute;
+  top: 10px;
+  width: 920px; }
+  /* line 26, ../componentes/sass/_layout.scss */
+  div#cabezalho_comum h6 {
+    font-family: Intro, Arial, sans;
+    font-size: 10px; }
+  /* line 30, ../componentes/sass/_layout.scss */
+  div#cabezalho_comum h3 {
+    padding-top: 5px;
+    font-family: Raleway-Medium, Arial, sans;
+    color: #ed1224;
+    font-size: 16px; }
+  /* line 36, ../componentes/sass/_layout.scss */
+  div#cabezalho_comum h3.branco {
+    color: white; }
+
+/* line 38, ../componentes/sass/_layout.scss */
+#cabezalho_inicial {
+  position: absolute;
+  width: 350px;
+  left: 289px;
+  z-index: 2; }
+  /* line 43, ../componentes/sass/_layout.scss */
+  #cabezalho_inicial img {
+    margin: 5px auto;
+    display: block;
+    text-align: center;
+    margin-bottom: -1em; }
+  /* line 49, ../componentes/sass/_layout.scss */
+  #cabezalho_inicial hr.short {
+    width: 120px; }
+  /* line 52, ../componentes/sass/_layout.scss */
+  #cabezalho_inicial hr.long {
+    width: 100%; }
+  /* line 55, ../componentes/sass/_layout.scss */
+  #cabezalho_inicial p {
+    font-family: Intro, Arial, sans;
+    font-size: 1em;
+    color: black;
+    text-align: center;
+    letter-spacing: 4px; }
+
+/* line 68, ../componentes/sass/_layout.scss */
+#section1 div#section1_fundo {
+  width: 920px;
+  height: 640px;
+  overflow: hidden; }
+/* line 74, ../componentes/sass/_layout.scss */
+#section1 #logo_Vpower {
+  position: absolute;
+  z-index: 1010;
+  top: 580px;
+  left: 345px; }
+/* line 80, ../componentes/sass/_layout.scss */
+#section1 .btns_continuar {
+  display: none;
+  position: absolute;
+  z-index: 1011;
+  width: 920px;
+  top: 570px;
+  text-align: center; }
+  /* line 87, ../componentes/sass/_layout.scss */
+  #section1 .btns_continuar p {
+    font-size: .8em; }
+  /* line 88, ../componentes/sass/_layout.scss */
+  #section1 .btns_continuar img {
+    cursor: pointer; }
+
+/* line 99, ../componentes/sass/_layout.scss */
+#section2 {
+  display: none; }
+  /* line 102, ../componentes/sass/_layout.scss */
+  #section2 .bola_vermelha {
+    -moz-border-radius: 50%;
+    -webkit-border-radius: 50%;
+    border-radius: 50%;
+    background: #ed1224;
+    position: absolute;
+    display: none;
+    opacity: 0; }
+  /* line 111, ../componentes/sass/_layout.scss */
+  #section2 div#imgs_gasolinas div {
+    position: absolute;
+    display: none;
+    top: 220px;
+    opacity: 0; }
+    /* line 117, ../componentes/sass/_layout.scss */
+    #section2 div#imgs_gasolinas div img.bandinha_gasolinas, #section2 div#imgs_gasolinas div img.bandinha_gasolinas_on {
+      display: none;
+      position: absolute;
+      top: 88px;
+      left: 50px; }
+    /* line 123, ../componentes/sass/_layout.scss */
+    #section2 div#imgs_gasolinas div img.imgs_gasolinas {
+      width: 218px;
+      position: absolute; }
+    /* line 127, ../componentes/sass/_layout.scss */
+    #section2 div#imgs_gasolinas div img.btns_gasolinas {
+      display: none;
+      position: absolute;
+      top: 270px;
+      left: 87px;
+      cursor: pointer; }
+  /* line 135, ../componentes/sass/_layout.scss */
+  #section2 div#imgs_gasolinas div#comum {
+    top: 100px;
+    left: 400px;
+    display: none; }
+  /* line 140, ../componentes/sass/_layout.scss */
+  #section2 div#imgs_gasolinas div#aditivada {
+    top: 183px;
+    left: 283px; }
+  /* line 144, ../componentes/sass/_layout.scss */
+  #section2 div#imgs_gasolinas div#premium {
+    top: 183px;
+    left: 422px; }
+  /* line 148, ../componentes/sass/_layout.scss */
+  #section2 div#imgs_gasolinas div#vpower {
+    top: 227px;
+    left: 352px; }
+  /* line 156, ../componentes/sass/_layout.scss */
+  #section2 #section21 .bola_vermelha {
+    width: 264px;
+    height: 264px;
+    left: 332px;
+    top: 98px; }
+    /* line 161, ../componentes/sass/_layout.scss */
+    #section2 #section21 .bola_vermelha p {
+      font-family: Raleway-SemiBold, Arial, sans;
+      color: white;
+      text-align: center;
+      line-height: 20px;
+      padding-top: 70px; }
+  /* line 171, ../componentes/sass/_layout.scss */
+  #section2 #section22 .txt_gasolinas {
+    position: absolute;
+    display: none;
+    top: 97px;
+    font-family: Raleway-SemiBold, Arial, sans;
+    text-align: center; }
+    /* line 177, ../componentes/sass/_layout.scss */
+    #section2 #section22 .txt_gasolinas p {
+      font-size: 14px;
+      font-family: Raleway-SemiBold, Arial, sans; }
+    /* line 181, ../componentes/sass/_layout.scss */
+    #section2 #section22 .txt_gasolinas h4 {
+      margin-top: 27px;
+      font-family: Raleway, Arial, sans; }
+  /* line 186, ../componentes/sass/_layout.scss */
+  #section2 #section22 div#txt_gasolinas_comum {
+    left: 72px; }
+  /* line 189, ../componentes/sass/_layout.scss */
+  #section2 #section22 div#txt_gasolinas_aditivada {
+    left: 270px; }
+  /* line 192, ../componentes/sass/_layout.scss */
+  #section2 #section22 div#txt_gasolinas_premium {
+    left: 503px; }
+  /* line 195, ../componentes/sass/_layout.scss */
+  #section2 #section22 div#txt_gasolinas_vpower {
+    left: 728px; }
+    /* line 197, ../componentes/sass/_layout.scss */
+    #section2 #section22 div#txt_gasolinas_vpower h4 {
+      color: #ed1224; }
+  /* line 226, ../componentes/sass/_layout.scss */
+  #section2 #section23 div.detalhe_img_ampliar, #section2 #section23_vpower div.detalhe_img_ampliar {
+    /* 	display: none; */
+    z-index: 10000;
+    position: absolute;
+    top: 42px;
+    left: 590px; }
+    /* line 232, ../componentes/sass/_layout.scss */
+    #section2 #section23 div.detalhe_img_ampliar img#btn_detalhe_img_ampliar, #section2 #section23_vpower div.detalhe_img_ampliar img#btn_detalhe_img_ampliar {
+      position: absolute;
+      top: 64px;
+      left: 157px;
+      width: 28px;
+      cursor: pointer;
+      -webkit-animation: animacaoPulsante 4s infinite;
+      /* Safari 4+ */
+      -moz-animation: animacaoPulsante 4s infinite;
+      /* Fx 5+ */
+      -o-animation: animacaoPulsante 4s infinite;
+      /* Opera 12+ */
+      animation: animacaoPulsante 4s infinite;
+      /* &:hover{
+      	opacity: 1 !important;
+      } */ }
+  /* line 268, ../componentes/sass/_layout.scss */
+  #section2 #section23 {
+    display: none; }
+    /* line 270, ../componentes/sass/_layout.scss */
+    #section2 #section23 p#detalhe_txt_gasolina {
+      position: absolute;
+      top: 97px;
+      left: 72px;
+      font-family: Raleway-Bold, Arial, sans;
+      color: #5b5b5f;
+      text-align: center;
+      font-size: 14px; }
+    /* line 279, ../componentes/sass/_layout.scss */
+    #section2 #section23 h4#detalhe_txt_gasolina_titulo {
+      position: absolute;
+      top: 166px;
+      left: 80px;
+      font-family: Raleway, Arial, sans;
+      font-size: 20px;
+      text-align: center; }
+    /* line 287, ../componentes/sass/_layout.scss */
+    #section2 #section23 img#detalhe_img_cabezalho {
+      position: absolute;
+      top: 80px;
+      left: 220px; }
+    /* line 292, ../componentes/sass/_layout.scss */
+    #section2 #section23 div#detalhes_bloco_txt {
+      position: absolute;
+      top: 240px;
+      left: 220px;
+      width: 650px; }
+      /* line 297, ../componentes/sass/_layout.scss */
+      #section2 #section23 div#detalhes_bloco_txt hr {
+        position: absolute;
+        top: 130px;
+        width: 100%; }
+      /* line 302, ../componentes/sass/_layout.scss */
+      #section2 #section23 div#detalhes_bloco_txt #detalhes_bloco_txt_entrega {
+        position: absolute;
+        top: 160px; }
+    /* line 307, ../componentes/sass/_layout.scss */
+    #section2 #section23 div#detalhes_bloco_txt div {
+      font-family: Raleway-SemiBold, Arial, sans; }
+      /* line 309, ../componentes/sass/_layout.scss */
+      #section2 #section23 div#detalhes_bloco_txt div h3, #section2 #section23 div#detalhes_bloco_txt div ul {
+        position: relative;
+        top: -20px;
+        left: 30px; }
+      /* line 314, ../componentes/sass/_layout.scss */
+      #section2 #section23 div#detalhes_bloco_txt div h3 {
+        font-size: 20px; }
+      /* line 317, ../componentes/sass/_layout.scss */
+      #section2 #section23 div#detalhes_bloco_txt div ul {
+        margin-top: 7px; }
+  /* line 325, ../componentes/sass/_layout.scss */
+  #section2 #section23_vpower {
+    display: none;
+    opacity: 0;
+    background: #ed1224;
+    height: 640px; }
+    /* line 330, ../componentes/sass/_layout.scss */
+    #section2 #section23_vpower img#icon_shellVpower {
+      position: absolute;
+      display: none;
+      opacity: 0;
+      left: 424px;
+      top: 230px; }
+    /* line 337, ../componentes/sass/_layout.scss */
+    #section2 #section23_vpower p#txt_description {
+      position: absolute;
+      top: 97px;
+      opacity: 0;
+      font-size: 14px;
+      color: white;
+      text-align: center;
+      width: 100%; }
+    /* line 346, ../componentes/sass/_layout.scss */
+    #section2 #section23_vpower h3 {
+      position: absolute;
+      top: 167px;
+      opacity: 0;
+      font-size: 20px;
+      font-family: Raleway, Arial, sans;
+      color: yellow;
+      text-align: center;
+      width: 100%;
+      text-transform: uppercase; }
+    /* line 357, ../componentes/sass/_layout.scss */
+    #section2 #section23_vpower p#txt_description2 {
+      display: block;
+      position: absolute;
+      top: 218px;
+      opacity: 0;
+      color: black;
+      font-size: 11px;
+      font-family: Raleway-ExtraBold, Arial, sans;
+      text-align: center;
+      text-transform: uppercase;
+      width: 100%; }
+    /* line 369, ../componentes/sass/_layout.scss */
+    #section2 #section23_vpower img#img_gasolina_vpower {
+      display: block;
+      opacity: 0;
+      width: 218px;
+      position: absolute;
+      top: 220px;
+      left: 349px; }
+    /* line 377, ../componentes/sass/_layout.scss */
+    #section2 #section23_vpower div.btns_ampliar {
+      position: absolute;
+      display: block;
+      opacity: 0; }
+      /* line 381, ../componentes/sass/_layout.scss */
+      #section2 #section23_vpower div.btns_ampliar p {
+        color: white;
+        font-size: 20px;
+        font-family: Raleway-SemiBold, Arial, sans;
+        display: block;
+        float: left;
+        margin-right: 10px;
+        padding-top: 4px; }
+      /* line 390, ../componentes/sass/_layout.scss */
+      #section2 #section23_vpower div.btns_ampliar img {
+        height: 24px;
+        display: block;
+        float: left;
+        margin-right: 10px; }
+    /* line 397, ../componentes/sass/_layout.scss */
+    #section2 #section23_vpower .btns_ampliar {
+      cursor: pointer; }
+    /* line 400, ../componentes/sass/_layout.scss */
+    #section2 #section23_vpower #btn_ampliar_formulacao {
+      display: block;
+      opacity: 0;
+      left: 263px;
+      top: 320px; }
+    /* line 406, ../componentes/sass/_layout.scss */
+    #section2 #section23_vpower #btn_ampliar_vantagens {
+      display: block;
+      opacity: 0;
+      left: 496px;
+      top: 359px; }
+    /* line 412, ../componentes/sass/_layout.scss */
+    #section2 #section23_vpower #btn_ampliar_entrega {
+      display: block;
+      opacity: 0;
+      left: 219px;
+      top: 389px; }
+    /* line 418, ../componentes/sass/_layout.scss */
+    #section2 #section23_vpower #btn_fechar {
+      display: none;
+      position: absolute;
+      z-index: 1020;
+      left: 441px;
+      top: 493px;
+      cursor: pointer; }
+    /* line 430, ../componentes/sass/_layout.scss */
+    #section2 #section23_vpower .destaque_vpower {
+      display: none;
+      opacity: 0;
+      background: white;
+      border: 5px solid grey;
+      -moz-border-radius: 50%;
+      -webkit-border-radius: 50%;
+      border-radius: 50%;
+      position: absolute;
+      top: 50px;
+      left: 260px;
+      width: 400px;
+      height: 400px; }
+      /* line 441, ../componentes/sass/_layout.scss */
+      #section2 #section23_vpower .destaque_vpower img {
+        display: block;
+        margin: 0 auto; }
+      /* line 445, ../componentes/sass/_layout.scss */
+      #section2 #section23_vpower .destaque_vpower img:nth-child(1) {
+        height: 24px;
+        margin-top: 15px; }
+      /* line 449, ../componentes/sass/_layout.scss */
+      #section2 #section23_vpower .destaque_vpower img[src*="icon_fechar_destaqueVpower"] {
+        cursor: pointer; }
+      /* line 452, ../componentes/sass/_layout.scss */
+      #section2 #section23_vpower .destaque_vpower .destaque_vpower_texto {
+        height: 307px;
+        width: 100%;
+        padding-top: 15px; }
+        /* line 456, ../componentes/sass/_layout.scss */
+        #section2 #section23_vpower .destaque_vpower .destaque_vpower_texto h3 {
+          position: static;
+          font-family: Raleway-SemiBold, Arial, sans;
+          opacity: 1;
+          color: grey; }
+        /* line 462, ../componentes/sass/_layout.scss */
+        #section2 #section23_vpower .destaque_vpower .destaque_vpower_texto p {
+          font-size: 13px;
+          font-family: Raleway-SemiBold, Arial, sans;
+          text-align: center;
+          line-height: 19px;
+          margin-top: 15px; }
+        /* line 469, ../componentes/sass/_layout.scss */
+        #section2 #section23_vpower .destaque_vpower .destaque_vpower_texto p:nth-child(2) {
+          margin-top: 30px; }
+
+/* line 488, ../componentes/sass/_layout.scss */
+#section3 {
+  display: none;
+  position: absolute;
+  z-index: 5001;
+  width: 100%;
+  height: 100%;
+  background: url("../images/gasolina.png") no-repeat right top;
+  background-position: 10% 45%; }
+  /* line 497, ../componentes/sass/_layout.scss */
+  #section3 img#logo {
+    margin: 130px auto 10px auto;
+    display: block; }
+  /* line 501, ../componentes/sass/_layout.scss */
+  #section3 img#gasolinas {
+    margin: 0 auto;
+    display: block; }
+  /* line 505, ../componentes/sass/_layout.scss */
+  #section3 div#btn_reiniciar {
+    text-align: center; }
+    /* line 507, ../componentes/sass/_layout.scss */
+    #section3 div#btn_reiniciar p {
+      font-size: .8em; }
+    /* line 508, ../componentes/sass/_layout.scss */
+    #section3 div#btn_reiniciar img {
+      cursor: pointer; }
+
+/* line 530, ../componentes/sass/_layout.scss */
+section#pop_up_wrapper_geral {
+  width: 100%;
+  height: 100%;
+  background: rgba(255, 255, 255, 0.7);
+  position: absolute;
+  top: 0;
+  z-index: 100001;
+  display: none; }
+  /* line 539, ../componentes/sass/_layout.scss */
+  section#pop_up_wrapper_geral div#pop_up {
+    position: absolute;
+    z-index: 14001;
+    width: 800px;
+    height: 510px;
+    top: 42px;
+    left: 35px;
+    background: #bbbbbb;
+    border: 6px solid #808285;
+    padding: 20px;
+    -moz-border-radius: 20px;
+    -webkit-border-radius: 20px;
+    border-radius: 20px; }
+    /* line 551, ../componentes/sass/_layout.scss */
+    section#pop_up_wrapper_geral div#pop_up div#pop_ups_wrapper {
+      width: 100%;
+      height: 480px;
+      overflow: hidden;
+      position: relative; }
+      /* line 556, ../componentes/sass/_layout.scss */
+      section#pop_up_wrapper_geral div#pop_up div#pop_ups_wrapper .pop_ups {
+        position: absolute;
+        top: 0;
+        left: 5px;
+        width: 100%; }
+        /* line 561, ../componentes/sass/_layout.scss */
+        section#pop_up_wrapper_geral div#pop_up div#pop_ups_wrapper .pop_ups .sprite {
+          position: absolute;
+          width: 600px;
+          height: 462px;
+          top: -50px;
+          left: 89px;
+          overflow: hidden;
+          background-position: 0px;
+          background-repeat: no-repeat;
+          -webkit-background-size: cover;
+          -moz-background-size: cover;
+          -o-background-size: cover;
+          background-size: cover; }
+        /* line 575, ../componentes/sass/_layout.scss */
+        section#pop_up_wrapper_geral div#pop_up div#pop_ups_wrapper .pop_ups #sprite1 {
+          background-image: url(../images/videos/motor_in.png); }
+        /* line 578, ../componentes/sass/_layout.scss */
+        section#pop_up_wrapper_geral div#pop_up div#pop_ups_wrapper .pop_ups #sprite2 {
+          background-image: url(../images/videos/sprite_octanas2.png); }
+        /* line 581, ../componentes/sass/_layout.scss */
+        section#pop_up_wrapper_geral div#pop_up div#pop_ups_wrapper .pop_ups #sprite3 {
+          background-image: url(../images/videos/sprite_octanas3.png); }
+        /* line 584, ../componentes/sass/_layout.scss */
+        section#pop_up_wrapper_geral div#pop_up div#pop_ups_wrapper .pop_ups h4 {
+          font-family: Raleway-Bold, Arial, sans;
+          text-align: center;
+          font-size: 17px;
+          margin-top: 430px; }
+      /* line 592, ../componentes/sass/_layout.scss */
+      section#pop_up_wrapper_geral div#pop_up div#pop_ups_wrapper #pop_up2 {
+        display: none; }
+      /* line 593, ../componentes/sass/_layout.scss */
+      section#pop_up_wrapper_geral div#pop_up div#pop_ups_wrapper #pop_up3 {
+        display: none; }
+    /* line 596, ../componentes/sass/_layout.scss */
+    section#pop_up_wrapper_geral div#pop_up h2 {
+      font-size: 20px;
+      color: #ed1224;
+      width: 100%;
+      text-align: center; }
+    /* line 603, ../componentes/sass/_layout.scss */
+    section#pop_up_wrapper_geral div#pop_up #pop_up_navegador {
+      position: absolute;
+      z-index: 10001;
+      top: 430px;
+      left: 379px;
+      width: 120px;
+      height: 30px; }
+    /* line 612, ../componentes/sass/_layout.scss */
+    section#pop_up_wrapper_geral div#pop_up img#btn_fechar {
+      position: absolute;
+      top: 535px;
+      left: 400px;
+      cursor: pointer; }
+    /* line 619, ../componentes/sass/_layout.scss */
+    section#pop_up_wrapper_geral div#pop_up #btn_next, section#pop_up_wrapper_geral div#pop_up #btn_prev {
+      float: left;
+      margin-right: 5px;
+      cursor: pointer; }
+    /* line 624, ../componentes/sass/_layout.scss */
+    section#pop_up_wrapper_geral div#pop_up .bolinhas_nav_popup {
+      -moz-border-radius: 50%;
+      -webkit-border-radius: 50%;
+      border-radius: 50%;
+      background: white;
+      border: 1px solid #4d4d4f;
+      width: 6px;
+      height: 6px;
+      float: left;
+      margin-right: 5px;
+      margin-top: 5px; }
+    /* line 634, ../componentes/sass/_layout.scss */
+    section#pop_up_wrapper_geral div#pop_up div.bolinhas_nav_popup.selected {
+      background: #4d4d4f; }
+
+/* line 641, ../componentes/sass/_layout.scss */
+div#icons_nav_ppal {
+  display: none;
+  position: absolute;
+  top: 510px;
+  left: 423px;
+  z-index: 1010; }
+  /* line 647, ../componentes/sass/_layout.scss */
+  div#icons_nav_ppal p#legenda_pe {
+    position: absolute;
+    display: none;
+    width: 400px;
+    top: 62px;
+    left: -350px;
+    font-size: 11px;
+    text-transform: uppercase; }
+  /* line 656, ../componentes/sass/_layout.scss */
+  div#icons_nav_ppal img#icon_nav_ppal {
+    display: block;
+    margin: 30px auto 5px auto; }
+  /* line 660, ../componentes/sass/_layout.scss */
+  div#icons_nav_ppal div#bolinhas_nav_ppal_wrapper {
+    width: 56%;
+    display: inline-block;
+    margin-left: 25px; }
+    /* line 665, ../componentes/sass/_layout.scss */
+    div#icons_nav_ppal div#bolinhas_nav_ppal_wrapper div.bolinhas_nav_ppal {
+      -moz-border-radius: 50%;
+      -webkit-border-radius: 50%;
+      border-radius: 50%;
+      background: white;
+      border: 1px solid #ed1224;
+      width: 6px;
+      height: 6px;
+      float: left;
+      margin-right: 5px;
+      cursor: pointer; }
+    /* line 675, ../componentes/sass/_layout.scss */
+    div#icons_nav_ppal div#bolinhas_nav_ppal_wrapper div.bolinhas_nav_ppal.selected {
+      background: #ed1224;
+      cursor: auto;
+      pointer-events: none; }
+    /* line 680, ../componentes/sass/_layout.scss */
+    div#icons_nav_ppal div#bolinhas_nav_ppal_wrapper div.bolinhas_nav_ppal.detalhe_vpower {
+      -moz-border-radius: 50%;
+      -webkit-border-radius: 50%;
+      border-radius: 50%;
+      background: white;
+      border: 1px solid black;
+      width: 6px;
+      height: 6px;
+      float: left;
+      margin-right: 5px; }
+    /* line 689, ../componentes/sass/_layout.scss */
+    div#icons_nav_ppal div#bolinhas_nav_ppal_wrapper div.bolinhas_nav_ppal.selected.detalhe_vpower {
+      background: black; }
+
+/* PRELOAD */
+/* line 697, ../componentes/sass/_layout.scss */
+#html5Loader {
+  top: 0;
+  left: 0;
+  background-color: black;
+  background-color: rgba(0, 0, 0, 0.95);
+  position: fixed;
+  z-index: 1000; }
+
+/* line 705, ../componentes/sass/_layout.scss */
+#html5Loader .fallback {
+  top: 50%;
+  position: absolute;
+  text-align: center;
+  width: 100%;
+  color: white;
+  vertical-align: middle;
+  display: block;
+  font-style: normal; }
+
+@-webkit-keyframes animacaoPulsante {
+  /* line 717, ../componentes/sass/_layout.scss */
+  0% {
+    opacity: 1; }
+
+  /* line 718, ../componentes/sass/_layout.scss */
+  80% {
+    opacity: 1; }
+
+  /* line 719, ../componentes/sass/_layout.scss */
+  90% {
+    opacity: 0; }
+
+  /* line 720, ../componentes/sass/_layout.scss */
+  100% {
+    opacity: 1; } }
+@-moz-keyframes animacaoPulsante {
+  /* line 723, ../componentes/sass/_layout.scss */
+  0% {
+    opacity: 1; }
+
+  /* line 724, ../componentes/sass/_layout.scss */
+  80% {
+    opacity: 1; }
+
+  /* line 725, ../componentes/sass/_layout.scss */
+  90% {
+    opacity: 0; }
+
+  /* line 726, ../componentes/sass/_layout.scss */
+  100% {
+    opacity: 1; } }
+@-o-keyframes animacaoPulsante {
+  /* line 729, ../componentes/sass/_layout.scss */
+  0% {
+    opacity: 1; }
+
+  /* line 730, ../componentes/sass/_layout.scss */
+  80% {
+    opacity: 1; }
+
+  /* line 731, ../componentes/sass/_layout.scss */
+  90% {
+    opacity: 0; }
+
+  /* line 732, ../componentes/sass/_layout.scss */
+  100% {
+    opacity: 1; } }
+@keyframes animacaoPulsante {
+  /* line 735, ../componentes/sass/_layout.scss */
+  0% {
+    opacity: 1; }
+
+  /* line 736, ../componentes/sass/_layout.scss */
+  80% {
+    opacity: 1; }
+
+  /* line 737, ../componentes/sass/_layout.scss */
+  90% {
+    opacity: 0; }
+
+  /* line 738, ../componentes/sass/_layout.scss */
+  100% {
+    opacity: 1; } }
